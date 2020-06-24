@@ -27,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
             group_id: {
                 type: DataTypes.INTEGER,
                 allowNull: false
-            },
+            }
         },
         {
             tableName: STUDENT,
@@ -36,7 +36,7 @@ module.exports = (sequelize, DataTypes) => {
 
     Student.associate = function (models) {
         Student.belongsTo(models.Group, {
-            foreignKey: GROUP_ID
+            foreignKey: GROUP_ID,
         });
     };
 

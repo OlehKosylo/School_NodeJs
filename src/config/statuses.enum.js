@@ -1,5 +1,7 @@
 module.exports = {
+    BAD_REQUEST: 'Bad request',
     PAGE_NOT_FOUND: 'Page not found',
-    BAD_REQUEST: 'Bad request'
+    PASSPORT_ALREADY_EXIST: 'Passport already exist'
+
 };
 

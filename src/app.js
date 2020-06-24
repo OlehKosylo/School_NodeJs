@@ -29,7 +29,8 @@ app.use(require(appSettings.BODY_PARSER).urlencoded({
 }));
 
 // Routing
-
+const {teacherRouter} = require('./routes');
+app.use('/teacher', teacherRouter);
 
 // Handling errors
 app.use('*', (err, req, res, next) => {

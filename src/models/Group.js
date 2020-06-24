@@ -12,17 +12,6 @@ module.exports = (sequelize, DataTypes) => {
             title: {
                 type: DataTypes.STRING,
                 allowNull: false
-            },
-
-            students: {
-                type: DataTypes.STRING,
-                allowNull: false,
-                get() {
-                    return this.getDataValue('students').split(';')
-                },
-                set(val) {
-                    this.setDataValue('students', val.join(';'));
-                },
             }
         },
         {

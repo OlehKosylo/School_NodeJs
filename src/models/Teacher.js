@@ -23,6 +23,12 @@ module.exports = (sequelize, DataTypes) => {
                 type: DataTypes.INTEGER,
                 allowNull: false
             },
+
+            passport: {
+                type: DataTypes.STRING,
+                allowNull: false,
+                unique:true
+            }
         },
         {
             tableName: TEACHER,

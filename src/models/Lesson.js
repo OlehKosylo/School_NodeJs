@@ -46,11 +46,10 @@ module.exports = (sequelize, DataTypes) => {
 
     Lesson.associate = function (models) {
         Lesson.hasOne(models.Teacher, {
-            foreignKey: TEACHER_ID
+            foreignKey: TEACHER_ID,
         });
-
         Lesson.hasOne(models.Group, {
-            foreignKey: GROUP_ID
+            foreignKey: GROUP_ID,
         });
     };
 
