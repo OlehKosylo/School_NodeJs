@@ -30,12 +30,12 @@ module.exports = (sequelize, DataTypes) => {
             },
 
             start_time: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.STRING,
                 allowNull: false,
             },
 
             end_time: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.STRING,
                 allowNull: false,
             }
         },

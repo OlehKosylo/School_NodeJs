@@ -29,8 +29,9 @@ app.use(require(appSettings.BODY_PARSER).urlencoded({
 }));
 
 // Routing
-const {groupRouter, studentRouter, teacherRouter} = require('./routes');
+const {groupRouter, lessonRouter, studentRouter, teacherRouter} = require('./routes');
 app.use('/group', groupRouter);
+app.use('/lesson', lessonRouter);
 app.use('/student', studentRouter);
 app.use('/teacher', teacherRouter);
 
